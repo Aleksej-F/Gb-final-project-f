@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/dog_go_bnb/static/css/main.89f43b62.css",
-    "main.js": "/dog_go_bnb/static/js/main.3d899183.js",
+    "main.js": "/dog_go_bnb/static/js/main.8bca998e.js",
     "static/js/787.cd4ba85b.chunk.js": "/dog_go_bnb/static/js/787.cd4ba85b.chunk.js",
     "index.html": "/dog_go_bnb/index.html",
     "main.89f43b62.css.map": "/dog_go_bnb/static/css/main.89f43b62.css.map",
-    "main.3d899183.js.map": "/dog_go_bnb/static/js/main.3d899183.js.map",
+    "main.8bca998e.js.map": "/dog_go_bnb/static/js/main.8bca998e.js.map",
     "787.cd4ba85b.chunk.js.map": "/dog_go_bnb/static/js/787.cd4ba85b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.89f43b62.css",
-    "static/js/main.3d899183.js"
+    "static/js/main.8bca998e.js"
   ]
 }
