@@ -18,16 +18,19 @@ export const Routes  = (props) => {
 return (
       
   <Switch>
-   
+  {/* PrivateRoute доступны авторизованному пользователю */}
     <PrivateRoute auth={auth} exact path="/specialist">
-    <h3>поиск спиалиста</h3>
+    {/* страница поиска специалиста */}
+    <h3>поиск специалиста</h3> 
     </PrivateRoute>
     
     <PrivateRoute auth={auth} exact path="/orders">
+    {/* страница просмотра моих заказов */}
     <h3>мои заказы</h3>
     </PrivateRoute>
     
     <PrivateRoute auth={auth} exact path="/using">
+    {/* страница заполнения данных для испольнителя */}
     <h3>стать испольнителем</h3>
     </PrivateRoute>
     
@@ -35,7 +38,7 @@ return (
       <Home auth={auth}/>
     </PublicRoute>
     
-    
+    {/* PublicRoute доступны всем пользователям*/} 
     <PublicRoute auth={auth} exact path="/login">
     <h3>авторизация</h3>
     </PublicRoute>
