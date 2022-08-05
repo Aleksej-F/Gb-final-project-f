@@ -1,7 +1,9 @@
 import React, {useEffect, useState} from 'react';
 import {Route, Switch} from "react-router-dom";
 
-
+import Specialist  from '../Specialist';
+import Orders  from '../Orders';
+import Using  from '../Using';
 
 import {PublicRoute} from "../../hocs/PublicRoute";
 import {PrivateRoute} from "../../hocs/PrivateRoute";
@@ -20,18 +22,18 @@ return (
   <Switch>
   {/* PrivateRoute доступны авторизованному пользователю */}
     <PrivateRoute auth={auth} exact path="/specialist">
-    {/* страница поиска специалиста */}
-    <h3>поиск специалиста</h3> 
+      {/* страница поиска специалиста */}
+      <Specialist/> 
     </PrivateRoute>
     
     <PrivateRoute auth={auth} exact path="/orders">
-    {/* страница просмотра моих заказов */}
-    <h3>мои заказы</h3>
+      {/* страница просмотра моих заказов */}
+      <Orders/>
     </PrivateRoute>
     
     <PrivateRoute auth={auth} exact path="/using">
-    {/* страница заполнения данных для испольнителя */}
-    <h3>стать испольнителем</h3>
+      {/* страница заполнения данных для испольнителя */}
+      <Using/>
     </PrivateRoute>
     
     <PublicRoute exact path="/">
