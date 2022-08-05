@@ -6,7 +6,9 @@ export const Layout = ({children}) => {
   return (
     <div className="App">
       <div className="wrapper">
+        
         <ul className="menu">
+          <img src="src/img/log1.jpg"></img>
           <li>
             <Link to="/">Home</Link>
           </li>
