@@ -1,17 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
+import {Layout} from "./pages/Layout";
+import {Routes} from "./pages/Routes";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        
-        <p>
-          DogGoBnb
-        </p>
-       
-      </header>
-    </div>
+    <Layout >
+      <Routes/>
+    </Layout>
   );
 }
 
